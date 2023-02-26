@@ -1,0 +1,109 @@
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(240, 240, 240);
+    color: white;
+}
+
+.container {
+    width: 510px;
+    margin: 0.9em;
+    padding: 0.9em;
+}
+
+.header {
+    background: url(/images/phone-wallpaper-3354067_1280.jpg), #020105a1;
+    background-blend-mode:color-dodge;
+    background-size: cover;
+    background-position: center-right;
+    padding: 5.5em 2.2em;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem; 
+    line-height: 4.1825rem;
+    font-weight: 400;
+}
+
+.header p {
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    border-radius: 0.2em;
+}
+
+form {
+    color: black;
+    display: flex;   
+    flex-direction: column;     
+    padding: 2em;
+    background-color: white;
+}
+
+input {
+    height:  4.06em;
+    padding-top: 0.5em;
+    background-color:#EDEDED;
+    margin-bottom: 2em;
+    border: 1px solid #C7C7C7;
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+}
+.email-input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 0.5em 0;
+    font-weight: 600;
+}
+
+input[type=submit] {
+    margin-top: 1.2em;
+    background-color: #5200FF;
+    color: white;
+    font-family: inherit;
+    font-size: 1.125rem;
+}
+
+
+/* tablet screen */
+
+@media only screen and (min-width: 770px) {
+     .container {
+        width: 770px; 
+     }
+     form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+     .name-input {
+        width: 47.5%;
+    }
+    .email-input {
+        width: 47.5%;
+    }
+
+     input[type=submit] {
+        padding: 0.5em 3em;
+
+     }
+
+
+}

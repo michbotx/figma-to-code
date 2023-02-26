@@ -111,7 +111,7 @@ button {
     .left-col,
     .right-col {
         flex-basis: 0;
-        flex-grow: 1;
+        flex-grow: 0.30 ;
         height: 100vh;
         display: grid;
         place-items: center;
@@ -120,10 +120,15 @@ button {
     .left-col {
         text-align: right;
     }
+
+    .right-col {
+        flex-grow: 0.7;
+    }
+
     .form {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         gap: 1em;
     }
 
